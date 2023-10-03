@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>BookMark</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class=" ">
+        <div class="py-4">
+          <h1 class="text-center m-auto fw-bold text-capitalize">bookmark</h1>
+        </div>
+        <hr />
+        <div
+          class="title d-flex py-4 align-items-center justify-content-center"
+        >
+          <i class="fa-solid fa-bookmark fs-4"></i>
+          <h2 class="px-2">Bookmark your favorite sites</h2>
+          <i class="fa-solid fa-bookmark fs-4"></i>
+        </div>
+        <label for="siteName" class="pt-5 fw-bold">
+          <i class="fa-solid fa-file-invoice"></i>
+          Site Name</label
+        >
+        <input
+          type="text"
+          id="siteName"
+          class="form-control mb-3"
+          placeholder="Bookmark name"
+        />
+        <label for="siteURL" class="fw-bold">
+          <i class="fa-solid fa-link"></i>
+          Site URL</label
+        >
+        <input
+          type="text"
+          id="siteURL"
+          class="form-control mb-3"
+          placeholder="website url"
+        />
+        <button disabled class="btn text-center" id="submit">Submit</button>
+      </div>
+      <hr />
+
+      <input
+        onkeyup="search(this.value)"
+        type="text"
+        class="my-3 mt-5 form-control"
+        placeholder="search by bookmark name"
+      />
+      <!-- table -->
+      <div class="my-5 bg-white output">
+        <table class="table text-center">
+          <thead>
+            <th>index</th>
+            <th>Website Name</th>
+            <th>Visit</th>
+            <th>Update</th>
+            <th>Delete</th>
+          </thead>
+
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- javascript filles -->
+    <!-- alert -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+    <!-- bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- javascript file -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
